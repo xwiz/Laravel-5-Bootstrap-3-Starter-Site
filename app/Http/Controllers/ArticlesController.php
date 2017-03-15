@@ -16,9 +16,9 @@ class ArticlesController extends Controller {
 
 	public function show($slug)
 	{
-		$article = Article::findBySlugOrId($slug);
+		$article = Article::where('slug', $slug)->orWhere('id', $slug)->first();
 
-		return view('article.view', compact('article'));
+        return view('article.view', compact('article'));
 	}
 
 }

@@ -29,7 +29,7 @@
 
                             <p>
                                 <a class="btn btn-mini btn-default"
-                                   href="{{url('news/'.$post->slug.'')}}">Read more</a>
+                                   href="{{url('article/'.$post->slug.'')}}">Read more</a>
                             </p>
                         </div>
                     </div>
