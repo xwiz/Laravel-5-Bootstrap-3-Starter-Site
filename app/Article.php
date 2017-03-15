@@ -2,24 +2,32 @@
 
 namespace App;
 
-use Cviebrock\EloquentSluggable\SluggableInterface;
-use Cviebrock\EloquentSluggable\SluggableTrait;
+use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Article extends Model implements SluggableInterface {
+class Article extends Model {
 
 	use SoftDeletes;
-	use SluggableTrait;
+	use Sluggable;
 
 	protected $dates = ['deleted_at'];
 
-	protected $sluggable = [
-		'build_from' => 'title',
-		'save_to'    => 'slug',
-	];
-
 	protected $guarded  = array('id');
+
+    /**
+     * Return the sluggable configuration array for this model.
+     *
+     * @return array
+     */
+    public function sluggable()
+    {
+        return [
+            'slug' => [
+                'source' => 'title'
+            ]
+        ];
+    }
 
 	/**
 	 * Returns a formatted post content entry,
