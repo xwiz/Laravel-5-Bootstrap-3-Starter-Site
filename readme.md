@@ -1,4 +1,4 @@
-# Laravel Framework 5.1  Bootstrap 3 Starter Site
+# Laravel Framework 5.4  Bootstrap 3 Starter Site
 
 ## Starter Site based on on Laravel 5.1 and Boostrap 3
 * [Features](#feature1)
@@ -13,7 +13,7 @@
 
 <a name="feature1"></a>
 ## Starter Site Features:
-* Laravel 5.1.x
+* Laravel 5.4.x
 * Twitter Bootstrap 3.x
 * Back-end
 	* Automatic install and setup website.
