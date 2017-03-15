@@ -66,7 +66,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="{{ url('auth/logout') }}"><i class="fa fa-sign-out"></i> Logout</a>
+                    <a href="{{ url('logout') }}"><i class="fa fa-sign-out"></i> Logout</a>
                 </li>
             </ul>
         </div>
