@@ -2,12 +2,11 @@
 
 use Closure;
 use Illuminate\Contracts\Auth\Guard;
-use Illuminate\Contracts\Routing\Middleware;
 use Illuminate\Contracts\Routing\ResponseFactory;
 
 use App\AssignedRoles;
 
-class Admin implements Middleware {
+class Admin {
 
     /**
      * The Guard implementation.
