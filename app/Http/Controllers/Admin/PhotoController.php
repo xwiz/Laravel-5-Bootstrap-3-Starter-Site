@@ -39,8 +39,8 @@ class PhotoController extends AdminController
      */
     public function create()
     {
-        $languages = Language::lists('name', 'id')->toArray();
-        $photoalbums = PhotoAlbum::lists('name', 'id')->toArray();
+        $languages = Language::pluck('name', 'id')->toArray();
+        $photoalbums = PhotoAlbum::pluck('name', 'id')->toArray();
         // Show the page
         return view('admin.photo.create_edit', compact('languages', 'photoalbums'));
     }
@@ -81,8 +81,8 @@ class PhotoController extends AdminController
      */
     public function edit(Photo $photo)
     {
-        $languages = Language::lists('name', 'id')->toArray();
-        $photoalbums = PhotoAlbum::lists('name', 'id')->toArray();
+        $languages = Language::pluck('name', 'id')->toArray();
+        $photoalbums = PhotoAlbum::pluck('name', 'id')->toArray();
         return view('admin.photo.create_edit', compact('photo', 'languages', 'photoalbums'));
     }
 

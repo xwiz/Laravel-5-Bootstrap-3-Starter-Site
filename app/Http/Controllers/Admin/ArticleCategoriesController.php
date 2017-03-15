@@ -36,7 +36,7 @@ class ArticleCategoriesController extends AdminController
      */
     public function create()
     {
-        $languages = Language::lists('name', 'id')->toArray();
+        $languages = Language::pluck('name', 'id')->toArray();
         return view('admin.articlecategory.create_edit', compact('languages'));
     }
 
@@ -60,7 +60,7 @@ class ArticleCategoriesController extends AdminController
      */
     public function edit(ArticleCategory $articlecategory)
     {
-        $languages = Language::lists('name', 'id')->toArray();
+        $languages = Language::pluck('name', 'id')->toArray();
         return view('admin.articlecategory.create_edit', compact('articlecategory', 'languages'));
     }
 

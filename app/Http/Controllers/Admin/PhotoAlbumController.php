@@ -34,7 +34,7 @@ class PhotoAlbumController extends AdminController
      */
     public function create()
     {
-        $languages = Language::lists('name', 'id')->toArray();
+        $languages = Language::pluck('name', 'id')->toArray();
         return view('admin.photoalbum.create_edit', compact('languages'));
     }
 
@@ -59,7 +59,7 @@ class PhotoAlbumController extends AdminController
      */
     public function edit(PhotoAlbum $photoalbum)
     {
-        $languages = Language::lists('name', 'id')->toArray();
+        $languages = Language::pluck('name', 'id')->toArray();
         return view('admin.photoalbum.create_edit', compact('photoalbum', 'languages'));
     }
 
