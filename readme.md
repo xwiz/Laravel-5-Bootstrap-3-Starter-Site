@@ -1,6 +1,6 @@
 # Laravel Framework 5.4  Bootstrap 3 Starter Site
 
-## Starter Site based on on Laravel 5.1 and Boostrap 3
+## Starter Site based on on Laravel 5.4 and Boostrap 3
 * [Features](#feature1)
 * [Requirements](#feature2)
 * [How to install](#feature3)
