@@ -11,10 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Auth::routes();
 Route::get('/logout', 'Auth\LoginController@logout');
 
@@ -35,7 +31,7 @@ Route::get('about', 'PagesController@about');
 Route::get('contact', 'PagesController@contact');
 Route::get('articles', 'ArticlesController@index');
 Route::get('article/{slug}', 'ArticlesController@show');
-Route::get('video/{id}', 'VideoController@show');
+//Route::get('video/{id}', 'VideoController@show');
 Route::get('photo/{id}', 'PhotoController@show');
 
 /***************    Admin routes  **********************************/

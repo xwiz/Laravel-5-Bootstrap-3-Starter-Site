@@ -44,15 +44,15 @@ class Admin {
 	 */
 	public function handle($request, Closure $next)
 	{
-        if ($this->auth->check())
+        if (\Auth::check())
         {
             $admin = 0;
-            if($this->auth->user()->admin==1)
+            if(\Auth::user()->admin==1)
             {
                 $admin=1;
             }
             if($admin==0){
-                return $this->response->redirectTo('/');
+                return $this->response->redirectTo('/notaaa');
             }
             return $next($request);
         }
