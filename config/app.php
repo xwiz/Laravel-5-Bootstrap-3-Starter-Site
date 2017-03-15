@@ -141,6 +141,7 @@ return [
         Illuminate\Notifications\NotificationServiceProvider::class,
         Laravel\Tinker\TinkerServiceProvider::class,
         Yajra\Datatables\DatatablesServiceProvider::class,
+        Yajra\Datatables\ButtonsServiceProvider::class,
         Cviebrock\EloquentSluggable\ServiceProvider::class,
 
         /*

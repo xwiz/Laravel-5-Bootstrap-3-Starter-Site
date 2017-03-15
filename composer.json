@@ -18,7 +18,8 @@
         "barryvdh/laravel-debugbar": "^2.0@dev",
         "laravelcollective/html": "~5.4",
         "cviebrock/eloquent-sluggable": "~4.2",
-        "laravel/tinker": "^1.0"
+        "laravel/tinker": "^1.0",
+        "yajra/laravel-datatables-buttons": "^1.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.6",
